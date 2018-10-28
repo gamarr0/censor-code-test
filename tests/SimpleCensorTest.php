@@ -25,6 +25,6 @@ class SimpleCensorTest extends TestCase
     ) {
         $censor = $this->container->get(SimpleCensor::class);
         $censoredText = $censor->__invoke($censoredWords, $text);
-        $this->assertEquals($censoredText, $validCensoredText);
+        $this->assertEquals($validCensoredText, $censoredText);
     }
 }

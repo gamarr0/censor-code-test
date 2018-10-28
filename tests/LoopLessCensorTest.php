@@ -25,6 +25,6 @@ class LoopLessCensorTest extends TestCase
     ) {
         $censor = $this->container->get(LoopLessCensor::class);
         $censoredText = $censor->__invoke($censoredWords, $text);
-        $this->assertEquals($censoredText, $validCensoredText);
+        $this->assertEquals($validCensoredText, $censoredText);
     }
 }
